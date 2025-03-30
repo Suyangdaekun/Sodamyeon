@@ -15,9 +15,10 @@ Built using Mediapipe for facial analysis, Flask for backend services, Socket fo
 ## ✨ Key Features
 Face Reading Analysis:
 - Analyzes facial features using Mediapipe to provide personality insights
-- Facial landmark analysis (Mediapipe, dlib, FAN)
-- Physiognomy analysis algorithm
-- Facial ratio measurement
+- Advanced facial landmark detection with Mediapipe's 400+ point model for precise feature tracking
+- Model selection based on comprehensive benchmarking of various landmark detection systems
+- Physiognomy analysis algorithm based on traditional Eastern face reading principles
+- Facial ratio measurement for personality trait prediction
   
 Astrology-Based Matching:
 - Matches users based on their zodiac signs and astrological compatibility
@@ -34,6 +35,32 @@ User Profiles:
 Senior-Friendly UI:
 - Simple and intuitive interface designed for older adults
 - Large fonts and clear navigation
+
+## 🧠 Face Landmark Modeling
+The facial landmark detection system is a core component of our app's face reading capabilities:
+
+### Technical Implementation
+- **Comprehensive benchmarking**: Evaluated Mediapipe, dlib, and FAN to select the best performance model
+- **Mediapipe selection**: Chosen for its superior performance with 400+ facial landmarks
+- **High-density landmark model**: Identifies detailed facial features including:
+  - Jawline contours
+  - Eyebrow shapes
+  - Nose structure
+  - Eye contours
+  - Lip shape and fullness
+- **Feature extraction**: Calculates over 30 facial ratios used in traditional physiognomy
+- **Real-time processing**: Optimized for Android mobile devices with 30+ FPS performance
+
+### Physiognomy Analysis
+The model extracts key measurements and ratios, including:
+- Face shape classification (oval, round, square, heart, etc.)
+- Facial thirds and golden ratio measurement
+- Eye-to-eye distance ratio
+- Nose-to-lip ratio
+- Facial symmetry analysis
+- Unique feature detection
+
+These measurements are processed through our proprietary algorithm that references traditional Eastern face reading principles, generating a comprehensive personality analysis and compatibility profile.
 
 ## 🛠 Tech Stack
 | Category | Technologies |
@@ -86,7 +113,7 @@ Matching:
 
 Chat:
 - Once matched, users can communicate in real-time using the chat feature
-  
+
 ## 📁 Project Structure
 ```
 .
