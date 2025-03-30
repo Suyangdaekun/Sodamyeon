@@ -12,6 +12,13 @@
 관상(얼굴 읽기)과 사주 기반 매칭 알고리즘을 활용하여 사용자들이 의미 있는 관계를 찾을 수 있도록 도와줍니다.  
 Mediapipe를 사용한 얼굴 분석, Flask 백엔드 서비스, Socket을 통한 실시간 커뮤니케이션, Firebase를 통한 데이터 관리를 통해 시니어들을 위한 원활하고 매력적인 사용자 경험을 제공합니다.
 
+## 🎬 데모
+<div align="center">
+  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share">
+    <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="소담연 앱 데모" style="width:300px; height:auto;"/>
+  </a>
+</div>
+
 ## ✨ 주요 기능
 관상 분석:
 - Mediapipe를 사용하여 얼굴 특징을 분석하고 성격 통찰력을 제공
@@ -87,11 +94,6 @@ Android 앱 실행:
 
 채팅:
 - 매칭된 후 사용자는 채팅 기능을 사용하여 실시간으로 대화 가능
-
-## 🎬 데모
-아래 이미지를 클릭하여 앱 데모 영상을 시청하세요:
-
-[![소담연 앱 데모](https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg)](https://youtube.com/shorts/OM7OZrjQ1wo?feature=share)
 
 ## 🧠 얼굴 랜드마크 모델링
 얼굴 랜드마크 감지 시스템은 앱의 관상 읽기 기능의 핵심 구성 요소입니다:

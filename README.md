@@ -12,6 +12,13 @@ Sodamyeon is a senior dating app that combines traditional wisdom with modern te
 The app leverages face reading (physiognomy) and astrology-based matching algorithms to help users find meaningful connections.  
 Built using Mediapipe for facial analysis, Flask for backend services, Socket for real-time communication, and Firebase for data management, Sodamyeon provides a seamless and engaging user experience tailored for seniors.
 
+## 🎬 Demo
+<div align="center">
+  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share">
+    <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="Sodamyeon App Demo" style="width:300px; height:auto;"/>
+  </a>
+</div>
+
 ## ✨ Key Features
 Face Reading Analysis:
 - Analyzes facial features using Mediapipe to provide personality insights
@@ -35,11 +42,6 @@ User Profiles:
 Senior-Friendly UI:
 - Simple and intuitive interface designed for older adults
 - Large fonts and clear navigation
-
-## 🎬 Demo
-Click the image below to watch the app demo:
-
-[![Sodamyeon App Demo](https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg)](https://youtube.com/shorts/OM7OZrjQ1wo?feature=share)
 
 ## 🧠 Face Landmark Modeling
 The facial landmark detection system is a core component of our app's face reading capabilities:
