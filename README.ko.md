@@ -61,7 +61,7 @@ git clone https://github.com/Suyangdaekun/Sodamyeon.git
 
 백엔드 서버 실행:
 ```bash
-cd Sodamyeon/SuyangApp/backend
+cd Sodamyeon/backend
 pip install -r requirements.txt
 python app.py
 ```
@@ -87,6 +87,11 @@ Android 앱 실행:
 
 채팅:
 - 매칭된 후 사용자는 채팅 기능을 사용하여 실시간으로 대화 가능
+
+## 🎬 데모
+아래 이미지를 클릭하여 앱 데모 영상을 시청하세요:
+
+[![소담연 앱 데모](https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg)](https://youtube.com/shorts/OM7OZrjQ1wo?feature=share)
 
 ## 🧠 얼굴 랜드마크 모델링
 얼굴 랜드마크 감지 시스템은 앱의 관상 읽기 기능의 핵심 구성 요소입니다:

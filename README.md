@@ -36,6 +36,11 @@ Senior-Friendly UI:
 - Simple and intuitive interface designed for older adults
 - Large fonts and clear navigation
 
+## 🎬 Demo
+Click the image below to watch the app demo:
+
+[![Sodamyeon App Demo](https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg)](https://youtube.com/shorts/OM7OZrjQ1wo?feature=share)
+
 ## 🧠 Face Landmark Modeling
 The facial landmark detection system is a core component of our app's face reading capabilities:
 
@@ -87,7 +92,7 @@ git clone https://github.com/Suyangdaekun/Sodamyeon.git
 
 Backend Server execution:
 ```bash
-cd Sodamyeon/SuyangApp/backend
+cd Sodamyeon/backend
 pip install -r requirements.txt
 python app.py
 ```
