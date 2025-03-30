@@ -47,7 +47,7 @@ The facial landmark detection system is a core component of our app's face readi
   - Eyebrow shapes
   - Nose structure
   - Eye contours
-  - Lip shape and fullness
+  - Lip shape
 - **Feature extraction**: Calculates over 30 facial ratios used in traditional physiognomy
 - **Real-time processing**: Optimized for Android mobile devices with 30+ FPS performance
 
