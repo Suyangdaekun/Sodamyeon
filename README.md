@@ -79,18 +79,22 @@ These measurements are processed through our proprietary algorithm that referenc
 | Database & Authentication | Firebase Firestore, Firebase Authentication |
 | Notifications | Firebase Cloud Messaging (FCM) |
 | Image Processing | OpenCV, NumPy |
+| Containerization | Docker, Docker Compose |
 
 ## 🚀 Getting Started
 ### Prerequisites
 - Python 3.9+ (for Flask backend)
 - Android Studio (for frontend development)
 - Firebase account for database and authentication setup
+- Docker and Docker Compose (optional, for containerized deployment)
   
 ### Installation
 Clone the repository:
 ```bash
 git clone https://github.com/Suyangdaekun/Sodamyeon.git
 ```
+
+#### Option 1: Traditional Setup
 
 Backend Server execution:
 ```bash
@@ -106,6 +110,24 @@ Configure Firebase:
 Run the Android app:
 - Open the project in Android Studio
 - Build and run on an emulator or physical device
+
+#### Option 2: Docker Setup
+
+Run the backend using Docker:
+```bash
+# From the project root
+docker compose up -d
+```
+
+Or build and run only the backend:
+```bash
+# From the backend directory
+cd Sodamyeon/backend
+docker build -t sodamyeon-backend .
+docker run -p 5001:5001 sodamyeon-backend
+```
+
+Configure Firebase and run the Android app as in the traditional setup.
   
 ## 🖥 Usage
 Sign Up/Login:
@@ -138,14 +160,19 @@ Chat:
 │   ├── face_measurements.py # Facial feature measurements
 │   ├── report_generator.py # Analysis report generation
 │   ├── utils.py            # Utility functions
-│   └── app.py              # Entry point for backend server
+│   ├── app.py              # Entry point for backend server
+│   ├── Dockerfile          # Dockerfile for backend
+│   └── requirements.txt    # Python dependencies
 │
+├── Dockerfile              # Main Dockerfile
+├── docker-compose.yml      # Docker Compose configuration
 └── README.md               # Project documentation
 ```
 
 ### Notes
 - When running on an Android emulator, the backend server is accessed via `10.0.2.2:5001`
 - When using on a real device, change the BASE_URL in the `api.kt` file to the actual server address
+- When using Docker, the backend is accessible on `localhost:5001`
 
 ## 📄 License
 MIT License
