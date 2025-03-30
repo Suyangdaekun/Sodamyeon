@@ -1,0 +1,148 @@
+# Sodamyeon - 관상과 사주 기반 시니어 소개팅 앱
+
+<div align="center">
+  <img src="app/src/main/res/drawable/logo_sodamyeon.png" alt="Project Logo" style="width:200px; height:auto;"/>
+  <br>
+  
+  [![English](https://img.shields.io/badge/language-English-blue.svg)](README.md) [![한국어](https://img.shields.io/badge/language-한국어-red.svg)](README.ko.md)
+</div>
+
+## 📖 개요
+소담연은 전통적인 지혜와 현대 기술을 결합한 시니어 소개팅 앱입니다.  
+관상(얼굴 읽기)과 사주 기반 매칭 알고리즘을 활용하여 사용자들이 의미 있는 관계를 찾을 수 있도록 도와줍니다.  
+Mediapipe를 사용한 얼굴 분석, Flask 백엔드 서비스, Socket을 통한 실시간 커뮤니케이션, Firebase를 통한 데이터 관리를 통해 시니어들을 위한 원활하고 매력적인 사용자 경험을 제공합니다.
+
+## ✨ 주요 기능
+관상 분석:
+- Mediapipe를 사용하여 얼굴 특징을 분석하고 성격 통찰력을 제공
+- 얼굴 랜드마크 분석 (Mediapipe, dlib, FAN)
+- 관상 분석 알고리즘
+- 얼굴 비율 측정
+  
+사주 기반 매칭:
+- 별자리와 사주 호환성을 기반으로 사용자를 매칭
+- 생년월일 기반 사주 분석
+- 별자리 매칭 알고리즘
+- 궁합 분석 시스템
+  
+실시간 채팅:
+- Socket을 통해 매칭된 사용자 간 즉각적인 메시징 가능
+
+사용자 프로필:
+- Firebase를 사용하여 사용자 데이터를 안전하게 저장 및 관리
+
+시니어 친화적 UI:
+- 노년층을 위해 설계된 간단하고 직관적인 인터페이스
+- 큰 글씨와 명확한 내비게이션
+
+## 🛠 기술 스택
+| 카테고리 | 기술 |
+|----------|--------------|
+| 백엔드 | Flask, Socket.IO |
+| 프론트엔드 | Android (Kotlin) | 
+| 얼굴 분석 | Mediapipe, dlib, FAN |
+| 실시간 통신 | Socket.IO, Firebase Realtime Database |
+| 데이터베이스 및 인증 | Firebase Firestore, Firebase Authentication |
+| 알림 | Firebase Cloud Messaging (FCM) |
+| 이미지 처리 | OpenCV, NumPy |
+
+## 🚀 시작하기
+### 사전 요구사항
+- Python 3.9+ (Flask 백엔드용)
+- Android Studio (프론트엔드 개발용)
+- 데이터베이스 및 인증 설정을 위한 Firebase 계정
+  
+### 설치
+저장소 복제:
+```bash
+git clone https://github.com/Suyangdaekun/Sodamyeon.git
+```
+
+백엔드 서버 실행:
+```bash
+cd Sodamyeon/SuyangApp/backend
+pip install -r requirements.txt
+python app.py
+```
+
+Firebase 구성:
+- Firebase 프로젝트를 생성하고 google-services.json 파일을 다운로드
+- Android 프로젝트의 app/ 디렉토리에 파일 배치
+  
+Android 앱 실행:
+- Android Studio에서 프로젝트 열기
+- 에뮬레이터 또는 실제 기기에서 빌드 및 실행
+  
+## 🖥 사용법
+회원가입/로그인:
+- 사용자는 Firebase Authentication을 통해 이메일 또는 Google 계정으로 등록 가능
+
+프로필 생성:
+- 관상 분석을 위한 프로필 사진 업로드
+- 사주 기반 매칭을 위한 생년월일 입력
+  
+매칭:
+- 앱은 얼굴 특징과 별자리 호환성을 분석하여 매칭을 제안
+
+채팅:
+- 매칭된 후 사용자는 채팅 기능을 사용하여 실시간으로 대화 가능
+  
+## 📁 프로젝트 구조
+```
+.
+├── app/                    # Android 애플리케이션
+│   ├── src/main/java/com/ryh/suyangdaegun/
+│   │   ├── MainActivity.kt        # 메인 진입점
+│   │   ├── ChattingActivity.kt    # 실시간 채팅 구현
+│   │   └── FaceAnalysisActivity.kt # Mediapipe 통합
+│   └── res/
+│       ├── layout/                # XML 레이아웃
+│       └── drawable/              # 이미지 자산
+│
+├── backend/                # 관상 읽기 및 분석 백엔드
+│   ├── analyze_face.py     # 얼굴 분석 로직
+│   ├── face_measurements.py # 얼굴 특징 측정
+│   ├── report_generator.py # 분석 보고서 생성
+│   ├── utils.py            # 유틸리티 함수
+│   └── app.py              # 백엔드 서버 진입점
+│
+└── README.md               # 프로젝트 문서
+```
+
+### 주의사항
+- 안드로이드 에뮬레이터에서 실행 시 백엔드 서버는 `10.0.2.2:5001`로 접근합니다.
+- 실제 기기에서 사용 시 `api.kt` 파일의 BASE_URL을 실제 서버 주소로 변경해야 합니다.
+
+## 📄 라이선스
+MIT 라이선스
+
+사용된 외부 라이브러리 라이선스:
+- Mediapipe: Apache 2.0
+- Firebase: Google APIs 서비스 약관
+- OpenCV: BSD 3-Clause
+
+## 🔒 보안 고려사항
+- Firebase 보안 규칙 설정
+- 사용자 데이터 암호화
+- API 인증 방법
+- 사용자 데이터 처리를 위한 GDPR 준수
+
+## 🤝 팀
+팀명: 수양
+| 역할 | 이름 |
+|----------|--------------|
+| 프로젝트 리더 | 양동훈 |
+| 백엔드 개발자 | 류양환 |
+| 프론트엔드 개발자 | 문이환 |
+| UI/UX 디자이너 | 신동찬 |
+| 얼굴 랜드마크 모델링 | 윤수혁 |
+
+## 📬 연락처
+문의 사항은 다음 주소로 연락주세요:
+wintrover@gmail.com
+
+## 🔄 향후 개발 계획
+- AI 기반 대화 시작 도우미
+- 향상된 매칭 알고리즘
+- 추가 전통적 매칭 방법
+- 웹 플랫폼 확장 
