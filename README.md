@@ -14,7 +14,7 @@ Built using Mediapipe for facial analysis, Flask for backend services, Socket fo
 
 ## 🎬 Demo
 <div align="center">
-  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share">
+  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share" target="_blank">
     <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="Sodamyeon App Demo" style="width:300px; height:auto;"/>
   </a>
 </div>

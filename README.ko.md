@@ -14,7 +14,7 @@ Mediapipe를 사용한 얼굴 분석, Flask 백엔드 서비스, Socket을 통�
 
 ## 🎬 데모
 <div align="center">
-  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share">
+  <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share" target="_blank">
     <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="소담연 앱 데모" style="width:300px; height:auto;"/>
   </a>
 </div>
@@ -179,4 +179,4 @@ wintrover@gmail.com
 - AI 기반 대화 시작 도우미
 - 향상된 매칭 알고리즘
 - 추가 전통적 매칭 방법
-- 웹 플랫폼 확장 
+- 웹 플랫폼 확장
