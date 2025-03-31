@@ -8,14 +8,14 @@
 </div>
 
 ## 📖 개요
-소다면은 전통적인 지혜와 현대 기술을 결합한 시니어 데이팅 앱입니다.  
+소담연은 전통적인 지혜와 현대 기술을 결합한 시니어 데이팅 앱입니다.  
 관상(얼굴 읽기)과 별자리 기반 매칭 알고리즘을 활용하여 사용자에게 의미 있는 만남을 주선합니다.  
 얼굴 분석을 위한 Mediapipe, 백엔드 서비스를 위한 Flask, 실시간 통신을 위한 Socket, 데이터 관리를 위한 Firebase를 사용하여 시니어에게 맞춤화된 원활하고 매력적인 사용자 경험을 제공합니다.
 
 ## 🎬 데모
 <div align="center">
   <a href="https://youtube.com/shorts/OM7OZrjQ1wo?feature=share" target="_blank">
-    <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="소다면 앱 데모" style="width:300px; height:auto;"/>
+    <img src="https://img.youtube.com/vi/OM7OZrjQ1wo/0.jpg" alt="소담연 앱 데모" style="width:300px; height:auto;"/>
   </a>
 </div>
 
